@@ -19,7 +19,7 @@ public class playerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    public GameObject save;
+    //public GameObject save;
     
 
 
