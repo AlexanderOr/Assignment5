@@ -7,7 +7,7 @@ public class gameWin : MonoBehaviour
 {
 
     public GameObject winUI;
-
+    public MouseLook mouseLook;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,6 +17,7 @@ public class gameWin : MonoBehaviour
         if (other.gameObject.name == "exit")
         {
             Time.timeScale = 0;
+            mouseLook.enabled = false;
 
             winUI.SetActive(true);
         }
@@ -25,6 +26,7 @@ public class gameWin : MonoBehaviour
     public void LoadLevel(string name)
     {
         Time.timeScale = 1;
+        mouseLook.enabled = true;
 
         SceneManager.LoadScene(name);
     }
