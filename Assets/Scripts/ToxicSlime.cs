@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ToxicSlime : MonoBehaviour
 {
-    
+    public string name;
     //public GameObject explosionEffect;
 
     private void OnTriggerEnter(Collider other)
@@ -19,7 +20,11 @@ public class ToxicSlime : MonoBehaviour
         //Destroy(this.gameObject) will destroy the object where this component is
 
 
-        Destroy(other.gameObject);
+        //Destroy(other.gameObject);
+
+
+        SceneManager.LoadScene(name);
+        
     }
 
 }
