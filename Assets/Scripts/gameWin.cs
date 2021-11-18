@@ -19,6 +19,7 @@ public class gameWin : MonoBehaviour
             Time.timeScale = 0;
             mouseLook.enabled = false;
 
+            Cursor.lockState = CursorLockMode.None;
             winUI.SetActive(true);
         }
 
@@ -28,6 +29,7 @@ public class gameWin : MonoBehaviour
         Time.timeScale = 1;
         mouseLook.enabled = true;
 
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(name);
     }
 
