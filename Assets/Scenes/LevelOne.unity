@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44194466, g: 0.49090254, b: 0.5708467, a: 1}
+  m_IndirectSpecularColor: {r: 0.44195038, g: 0.49091047, b: 0.570854, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3778,6 +3778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winUI: {fileID: 531886418}
   mouseLook: {fileID: 666047679}
+  pauseMenu: {fileID: 377062021}
 --- !u!1 &1768248234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3912,6 +3913,22 @@ PrefabInstance:
     - target: {fileID: 7784443093763253960, guid: 75969dc02dfc5254da4681a58e3d2d25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784443095563680761, guid: 75969dc02dfc5254da4681a58e3d2d25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1763613516}
+    - target: {fileID: 7784443095563680761, guid: 75969dc02dfc5254da4681a58e3d2d25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784443095563680761, guid: 75969dc02dfc5254da4681a58e3d2d25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: gameWin, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784443095563680761, guid: 75969dc02dfc5254da4681a58e3d2d25, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: LevelOne
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75969dc02dfc5254da4681a58e3d2d25, type: 3}

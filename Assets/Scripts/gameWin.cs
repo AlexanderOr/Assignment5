@@ -8,6 +8,8 @@ public class gameWin : MonoBehaviour
 
     public GameObject winUI;
     public MouseLook mouseLook;
+    public PauseMenu pauseMenu;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +20,7 @@ public class gameWin : MonoBehaviour
         {
             Time.timeScale = 0;
             mouseLook.enabled = false;
+            pauseMenu.enabled = false;
 
             Cursor.lockState = CursorLockMode.None;
             winUI.SetActive(true);
@@ -28,6 +31,7 @@ public class gameWin : MonoBehaviour
     {
         Time.timeScale = 1;
         mouseLook.enabled = true;
+        pauseMenu.enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(name);
