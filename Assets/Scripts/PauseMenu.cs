@@ -28,6 +28,7 @@ public class PauseMenu : MonoBehaviour
             mouseLook.enabled = true;
 
             Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             pauseUI.SetActive(false);
         }
         else 
@@ -38,6 +39,7 @@ public class PauseMenu : MonoBehaviour
             mouseLook.enabled = false;
 
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             pauseUI.SetActive(true);
         }
 
