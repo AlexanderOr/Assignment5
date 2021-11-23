@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class ToxicSlime : MonoBehaviour
 {
     public string name;
-    //public GameObject explosionEffect;
+    public GameObject hitsound;
 
     private void OnTriggerEnter(Collider other)
     {
-        //Vector3 particleSpawnPoint = other.transform.position;
-        //Instantiate(explosionEffect, particleSpawnPoint, Quaternion.identity);
+        Vector3 audioSpawnpoint = other.transform.position;
+        Instantiate(hitsound, audioSpawnpoint, Quaternion.identity);
 
 
         //Destroy() is the base function for destroying components and objects in a scene
