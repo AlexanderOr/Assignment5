@@ -23,6 +23,8 @@ public class gameWin : MonoBehaviour
             pauseMenu.enabled = false;
 
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             winUI.SetActive(true);
         }
 
@@ -34,6 +36,7 @@ public class gameWin : MonoBehaviour
         pauseMenu.enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         SceneManager.LoadScene(name);
     }
 
